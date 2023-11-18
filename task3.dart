@@ -5,19 +5,10 @@ void main() {
   String height = stdin.readLineSync()!;
   stdout.write('Enter the base:');
   String base = stdin.readLineSync()!;
-  int area1 = calculateArea1(int.parse(height));
-  int area2 = calculateArea2(int.parse(base));
-  print(calculateArea3(height, base));
+  double area3 = calculateArea3(double.parse(height), double.parse(base));
+  print('The area is: $area3');
 }
 
-int calculateArea1(int height) {
-  return height;
-}
-
-int calculateArea2(int base) {
-  return base;
-}
-
-double calculateArea3(height, base) {
-  return height * base;
+double calculateArea3(double height, double base) {
+  return 0.5 * height * base;
 }
